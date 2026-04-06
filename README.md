@@ -16,4 +16,4 @@ This project performs data cleaning on the 2022 layoffs dataset from Kaggle:
 
 ## File Structure
 - `sql/DataCleaningProject.sql` : SQL script containing all cleaning steps.
-- 'layoffs.csv' : Dataset
+- `layoffs.csv` : Dataset
