@@ -25,6 +25,17 @@ SELECT * FROM layoffs_staging; -- to view the clone
 
 DESCRIBE layoffs_staging; -- to view datatypes of each column
 
+-- TO FILTER DUPLICATES FROM ORIGINAL TABLE
+
+SELECT *
+FROM ( SELECT company, location, industry, total_laid_off,percentage_laid_off,`date`, stage, country, funds_raised_millions,
+	  ROW_NUMBER() OVER (
+      PARTITION BY company, location, industry, total_laid_off,percentage_laid_off,`date`, stage, country, funds_raised_millions
+                         ) AS ROW_NUM
+      FROM layoffs_staging
+      ) DUPLICATES
+WHERE ROW_NUM > 1;
+
 -- to create a clone of original table with same structure and ROW_NUM
 
 CREATE TABLE layoffs_staging2 (
