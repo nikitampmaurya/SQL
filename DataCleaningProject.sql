@@ -5,7 +5,7 @@
 1. CHECK FOR DUPLICATES AND REMOVE IF ANY
 2. STANDARDISE THE DATA 
 3. HANDLE NULL VALUES
-4. REMOVE IRRELEVANT COLUMNS AND ROWS
+4. REMOVE ROWS where most column are null values 
 */
 
 SHOW DATABASES; -- to lists all the databases
@@ -24,6 +24,8 @@ SELECT * FROM layoffs; -- copy all the data from the original dataset
 SELECT * FROM layoffs_staging; -- to view the clone
 
 DESCRIBE layoffs_staging; -- to view datatypes of each column
+
+-- Step 1: 
 
 -- TO FILTER DUPLICATES FROM ORIGINAL TABLE
 
@@ -89,4 +91,83 @@ WHERE ROW_NUM > 1; -- then deleting the duplicates
 SELECT COUNT(*) FROM layoffs_staging2; -- total 2356 rows in new table
 
 SELECT COUNT(*) FROM layoffs_staging; -- total 2361 rows in old table
+
+-- Step 2: Standardise the data and Step 3: Handle null values 
+
+SELECT COUNT(*)
+FROM layoffs_staging2
+WHERE company <> TRIM(company); -- total 10 rows with spaces
+
+UPDATE layoffs_staging2
+set company = TRIM(company); -- removed spaces 
+
+SELECT DISTINCT(industry)
+FROM layoffs_staging2; -- to view unique industry 
+
+UPDATE layoffs_staging2
+SET industry = 'Crypto'
+WHERE industry IN ('Crypto Currency', 'CryptoCurrency'); -- to keep only type of Crypto industry
+
+-- to check where industry is null or empty 
+SELECT *
+FROM layoffs_staging2
+WHERE industry is NULL
+OR industry = ''; 
+
+-- to fill empty row of industry with null
+UPDATE layoffs_staging2
+SET INDUSTRY = NULL
+WHERE INDUSTRY LIKE '';
+
+SELECT DISTINCT(country)
+FROM layoffs_staging2; -- to check for inconsistencies within country column
+
+-- to remove dot from the end of country
+UPDATE layoffs_staging2
+SET country = TRIM(TRAILING '.' FROM country)
+WHERE country like "United States%";
+
+SELECT DISTINCT(location)
+FROM layoffs_staging2; -- to check for inconsistences within location column
+
+UPDATE layoffs_staging2
+SET location = "Floripa"
+WHERE location like "Flori%";
+
+Update layoffs_staging2
+SET location = 'Dusseldorf'
+WHERE location = "DÃ¼sseldorf"; 
+
+Update layoffs_staging2
+SET location = 'Malmo'
+WHERE location = "MalmÃ¶"; 
+
+-- changing datatype of date column
+UPDATE layoffs_staging2
+SET `date` = DATE_FORMAT(`date`, '%d/%m/%Y');
+
+-- Step 4: Removing rows with null values
+
+SELECT *
+FROM layoffs_staging2
+WHERE total_laid_off IS NULL; -- to check for null values in total_laid_off column
+
+SELECT *
+FROM layoffs_staging2
+WHERE total_laid_off IS NULL
+AND percentage_laid_off IS NULL; -- to check for null values in both columns
+
+-- now deleting rows data where value were null for both columns
+DELETE FROM layoffs_staging2
+WHERE total_laid_off IS NULL
+AND percentage_laid_off IS NULL;
+
+SELECT count(*) 
+FROM layoffs_staging2;
+
+ALTER TABLE layoffs_staging2
+DROP COLUMN row_num;
+
+SELECT * 
+FROM layoffs_staging2;
 
