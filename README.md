@@ -1,4 +1,4 @@
-# MySQL Data Cleaning: Layoffs Dataset
+# MySQL Data Cleaning: Layoffs Dataset (In progress)
 
 ## Project Overview
 This project performs data cleaning on the 2022 layoffs dataset from Kaggle:
