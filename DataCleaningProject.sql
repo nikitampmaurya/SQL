@@ -142,7 +142,7 @@ Update layoffs_staging2
 SET location = 'Malmo'
 WHERE location = "MalmÃ¶"; 
 
--- changing datatype of date column
+-- changing date format of date column
 UPDATE layoffs_staging2
 SET `date` = DATE_FORMAT(`date`, '%d/%m/%Y');
 
