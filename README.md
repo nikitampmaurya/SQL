@@ -33,10 +33,10 @@ Project 2 — Exploratory Data Analysis (EDA): Using the cleaned dataset, this p
 
 ## Key Results: Project 2 — Data Exploratory
 
-- 116 companies shut down entirely. These included small startups and well-funded firms.
+- Out of 1995 companies, 116 had completely shut down. Surprisingly, some of these weren't just small startups, a few had raised hundreds of millions in funding before closing.
 - Amazon, Google, and Meta had the highest total layoffs. 
 - The United States, India, and the Netherlands were the three most affected countries.
-- 2022 saw the most layoffs of any single year, followed by 2023. 
+- 2022 was the worst year for layoffs overall.
 - Consumer and Retail were the hardest-hit industries by total employees laid off.
 - The top three companies that laid off by year are as follows:
 - Uber, Booking.com & Groupon (2020)
