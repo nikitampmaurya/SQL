@@ -27,7 +27,7 @@ Project 2 — Exploratory Data Analysis (EDA): Using the cleaned dataset, this p
 
 - 5 duplicate rows removed.
 - Removed inconsistencies from multiple columns (company, location, countries, industry).
-- Changes data type of date columns.
+- Changes the data type of the date column.
 - Removed 361 rows where null appeared multiple times in the same row.
 - Cleaned dataset with 1995 rows. 
 
