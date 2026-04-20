@@ -23,8 +23,18 @@ Project 2 — Exploratory Data Analysis (EDA): Using the cleaned dataset, this p
 - `sql/DataExploratoryProject.sql` : SQL script containing all exploratory steps.
 - `layoffs.csv` : Dataset
 
-- ## Steps Performed
-1. Checked for duplicates and removed them.
-2. Standardised text fields and dates.
-3. Handled NULL values.
-4. Removed irrelevant columns.
+## Key Results: Project 1 — Data Cleaning
+
+- 5 duplicate rows removed
+- 10 company names cleaned of whitespace
+- 3 inconsistent industry labels consolidated
+- Date column standardised and converted from TEXT to DATE
+
+## Key Results: Project 2 — Data Exploratory
+
+- 2022 and 2023 saw the highest total layoffs, with a sharp spike in early 2023
+- Consumer, Retail, and Transportation industries experienced the largest absolute layoffs
+- Post-IPO companies accounted for a disproportionate share of total layoffs, suggesting large established tech firms cut heavily
+- Several companies that raised hundreds of millions in funding still shut down entirely
+- The rolling total reveals layoffs were concentrated in specific months rather than spread evenly
+  
