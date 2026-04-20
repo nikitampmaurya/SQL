@@ -33,7 +33,7 @@ Project 2 — Exploratory Data Analysis (EDA): Using the cleaned dataset, this p
 
 ## Key Results: Project 2 — Data Exploratory
 
-- Out of 1995 companies, 116 had completely shut down. Surprisingly, some of these weren't just small startups, a few had raised hundreds of millions in funding before closing.
+- Out of 1995 companies, 116 had completely shut down. Surprisingly, some of these weren't just small startups; a few had raised hundreds of millions in funding before closing.
 - Amazon, Google, and Meta had the highest total layoffs. 
 - The United States, India, and the Netherlands were the three most affected countries.
 - 2022 was the worst year for layoffs overall.
@@ -43,4 +43,4 @@ Project 2 — Exploratory Data Analysis (EDA): Using the cleaned dataset, this p
 - Bytedance, Katerra & Zillow (2021)
 - Amazon, Cisco & Google (2022)
 - Google, Microsoft & Ericsson (2023)
-  
+- The rolling total query made it easy to see that layoffs didn't happen at a steady pace. They accelerated sharply over time, especially going into 2022 and 2023.
