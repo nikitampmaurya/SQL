@@ -25,10 +25,11 @@ Project 2 — Exploratory Data Analysis (EDA): Using the cleaned dataset, this p
 
 ## Key Results: Project 1 — Data Cleaning
 
-- 5 duplicate rows removed
-- 10 company names cleaned of whitespace
-- 3 inconsistent industry labels consolidated
-- Date column standardised and converted from TEXT to DATE
+- 5 duplicate rows removed.
+- Removed inconsistencies from multiple columns (company, location, countries, industry).
+- Changes data type of date columns.
+- Removed 361 rows where null appeared multiple times in the same row.
+- Cleaned dataset with 1995 rows. 
 
 ## Key Results: Project 2 — Data Exploratory
 
