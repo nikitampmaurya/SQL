@@ -42,3 +42,4 @@ Project 2 — Exploratory Data Analysis (EDA): Using the cleaned dataset, this p
 - Bytedance, Katerra & Zillow (2021)
 - Amazon, Cisco & Google (2022)
 - Google, Microsoft & Ericsson (2023)
+- The rolling total query made it easy to see that layoffs didn't happen at a steady pace — they accelerated sharply over time, especially going into 2022 and 2023.
