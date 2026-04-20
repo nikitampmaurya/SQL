@@ -2,13 +2,17 @@
 
 ## Project Overview
 
-This repository contains two SQL projects built on the global tech layoffs (2022–2023) dataset sourced from Kaggle: [Dataset link](https://www.kaggle.com/datasets/swaptr/layoffs-2022)
+This repository contains two SQL projects built on the global tech layoffs (2022–2023) dataset.
 
 Project 1 — Data Cleaning: The raw dataset contained duplicates, inconsistent formatting and missing values. The goal was to produce a clean, analysis-ready dataset using MySQL — without modifying the original table.
 
 Project 2 — Exploratory Data Analysis (EDA): Using the cleaned dataset, this project discovers trends in global tech layoffs between 2020 and 2023 — identifying which companies, industries, countries, and funding stages were most affected, and how layoffs evolved over time.
 
+## Dataset
 
+Source: Kaggle [Dataset link](https://www.kaggle.com/datasets/swaptr/layoffs-2022)
+Raw records: 2,361 rows across 9 columns 
+Fields: Company, location, industry, total laid off, percentage laid off, date, stage, country, funds raised
 
 ## Steps Performed
 1. Checked for duplicates and removed them.
