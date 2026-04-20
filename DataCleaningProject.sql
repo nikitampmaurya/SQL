@@ -25,6 +25,8 @@ SELECT * FROM layoffs_staging; -- to view the clone
 
 DESCRIBE layoffs_staging; -- to view datatypes of each column
 
+SELECT count(*) FROM layoffs_staging; -- total 2361 rows
+
 -- Step 1: 
 
 -- TO FILTER DUPLICATES FROM ORIGINAL TABLE
@@ -82,6 +84,8 @@ funds_raised_millions,
 	FROM layoffs_staging;
     
 SELECT * FROM layoffs_staging2; -- to view new table 
+
+SELECT count(*) FROM layoffs_staging2; -- total 2361 rows
 
 SET SQL_SAFE_UPDATES = 0; -- to switch off safe mode
 
@@ -174,3 +178,4 @@ DROP COLUMN row_num;
 SELECT * 
 FROM layoffs_staging2;
 
+DESCRIBE layoffs_staging2;
