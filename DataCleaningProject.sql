@@ -144,7 +144,10 @@ WHERE location = "MalmÃ¶";
 
 -- changing date format of date column
 UPDATE layoffs_staging2
-SET `date` = DATE_FORMAT(`date`, '%d/%m/%Y');
+SET `date` = STR_TO_DATE(`date`, '%m/%d/%Y'); -- convert date to a proper DATE type
+
+ALTER TABLE layoffs_staging2
+MODIFY COLUMN `date` DATE; -- change date type of data column
 
 -- Step 4: Removing rows with null values
 
