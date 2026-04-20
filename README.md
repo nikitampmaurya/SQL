@@ -33,9 +33,14 @@ Project 2 — Exploratory Data Analysis (EDA): Using the cleaned dataset, this p
 
 ## Key Results: Project 2 — Data Exploratory
 
-- 2022 and 2023 saw the highest total layoffs, with a sharp spike in early 2023
-- Consumer, Retail, and Transportation industries experienced the largest absolute layoffs
-- Post-IPO companies accounted for a disproportionate share of total layoffs, suggesting large established tech firms cut heavily
-- Several companies that raised hundreds of millions in funding still shut down entirely
-- The rolling total reveals layoffs were concentrated in specific months rather than spread evenly
+- 116 companies shut down entirely. These included small startups and well-funded firms.
+- Amazon, Google, and Meta had the highest total layoffs. 
+- The United States, India, and the Netherlands were the three most affected countries.
+- 2022 saw the most layoffs of any single year, followed by 2023. 
+- Consumer and Retail were the hardest-hit industries by total employees laid off.
+- The top three companies that laid off by year are as follows:
+- Uber, Booking.com & Groupon (2020)
+- Bytedance, Katerra & Zillow (2021)
+- Amazon, Cisco & Google (2022)
+- Google, Microsoft & Ericsson (2023)
   
