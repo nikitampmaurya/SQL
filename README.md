@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This repository contains two SQL projects built on a real-world dataset of global tech layoffs (2022–2023) sourced from Kaggle.[Dataset link](https://www.kaggle.com/datasets/swaptr/layoffs-2022)
+This repository contains two SQL projects built on the global tech layoffs (2022–2023) dataset sourced from Kaggle: [Dataset link](https://www.kaggle.com/datasets/swaptr/layoffs-2022)
 
 Project 1 — Data Cleaning: The raw dataset contained duplicates, inconsistent formatting and missing values. The goal was to produce a clean, analysis-ready dataset using MySQL — without modifying the original table.
 
