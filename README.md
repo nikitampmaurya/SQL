@@ -10,9 +10,9 @@ Project 2 — Exploratory Data Analysis (EDA): Using the cleaned dataset, this p
 
 ## Dataset
 
-Source: Kaggle [Dataset link](https://www.kaggle.com/datasets/swaptr/layoffs-2022)
-Raw records: 2,361 rows across 9 columns 
-Fields: Company, location, industry, total laid off, percentage laid off, date, stage, country, funds raised
+1. Source: Kaggle [Dataset link](https://www.kaggle.com/datasets/swaptr/layoffs-2022).
+2. Raw records: 2,361 rows across 9 columns 
+3. Fields: Company, location, industry, total laid off, percentage laid off, date, stage, country, funds raised
 
 ## Steps Performed
 1. Checked for duplicates and removed them.
