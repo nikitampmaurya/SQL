@@ -14,16 +14,17 @@ Project 2 — Exploratory Data Analysis (EDA): Using the cleaned dataset, this p
 2. Raw records: 2,361 rows across 9 columns 
 3. Fields: Company, location, industry, total laid off, percentage laid off, date, stage, country, funds raised
 
-## Steps Performed
-1. Checked for duplicates and removed them.
-2. Standardised text fields and dates.
-3. Handled NULL values.
-4. Removed irrelevant columns.
-
 ## Tools
 - MySQL 
 - Git bash
 
 ## File Structure
 - `sql/DataCleaningProject.sql` : SQL script containing all cleaning steps.
+- `sql/DataExploratoryProject.sql` : SQL script containing all exploratory steps.
 - `layoffs.csv` : Dataset
+
+- ## Steps Performed
+1. Checked for duplicates and removed them.
+2. Standardised text fields and dates.
+3. Handled NULL values.
+4. Removed irrelevant columns.
