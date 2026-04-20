@@ -10,7 +10,7 @@ Project 2 — Exploratory Data Analysis (EDA): Using the cleaned dataset, this p
 
 ## Dataset
 
-1. Source: Kaggle [Dataset link](https://www.kaggle.com/datasets/swaptr/layoffs-2022).
+1. Source: the global tech layoffs (2022–2023) dataset from Kaggle [Dataset link](https://www.kaggle.com/datasets/swaptr/layoffs-2022)
 2. Raw records: 2,361 rows across 9 columns 
 3. Fields: Company, location, industry, total laid off, percentage laid off, date, stage, country, funds raised
 
